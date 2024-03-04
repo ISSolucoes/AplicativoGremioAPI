@@ -4,7 +4,7 @@
   "description": "API REST de comunicação entre aplicativo de eleições de grêmio e banco de dados",
   "main": "main.js",
   "scripts": {
-    "start": "node .",
+    "start": "node ./swagger.js",
     "dev": "nodemon main.js localhost:3000",
     "swagger": "node ./swagger.js",
     "test": "echo \"Error: no test specified\" && exit 1"

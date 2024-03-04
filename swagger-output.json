@@ -1,0 +1,34 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "API - Aplicativo Grêmio",
+    "description": "API para interação entre aplicativo e banco de dados com autorização e autenticação."
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/escola/": {
+      "get": {
+        "tags": [
+          "escolas"
+        ],
+        "description": "Rota de busca de escolas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
