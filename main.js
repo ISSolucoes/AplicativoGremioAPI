@@ -17,7 +17,6 @@ async function main() {
 
     // IMPORT DE MIDDLEWARES PERSONALIZADOS
 
-
     // USO DE MIDDLEWARES INTERNOS
     app.use( express.urlencoded( { extended: true } ) );
     app.use( express.json() );
@@ -27,8 +26,10 @@ async function main() {
 
     // ROTAS
     const escolaRouter = require('./rotas/escola');
+
     // USO DE ROTAS
     app.use(`/escola`, escolaRouter);
+    
     // USO DE ROTAS DE DESENVOLVIMENTO
     app.use(`/`, swaggerUi.serve, swaggerUi.setup(documentoSwagger));
 
